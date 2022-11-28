@@ -11,12 +11,13 @@
     <header>
       <h1>Mozilla</h1>
       <!-- 插入 <img> 元素，链接至较小的 Firefox 标志。 -->
-
+      <img src="firefox_logo-only_RGB-120px.png" alt="Firefox logo">
     </header>
 
     <main>
       <article>
         <!-- 插入来自 Bilibili 的 <iframe> 元素 -->
+        <iframe width="400" height="225" src="https://player.bilibili.com/player.html?aid=3303261&amp;bvid=BV1rs411d7hC&amp;cid=5221342&amp;page=2" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
         <h2>自由网络 尽情驰骋</h2>
 
@@ -28,22 +29,38 @@
       <div class="further-info">
         <!-- 插入包含 srcsets 和 sizes 属性的图像 -->
         <a href="https://www.mozilla.org/zh-CN/firefox/new/">
-          <img>
+          <img srcset="firefox_logo-only_RGB-120px.png 120w,
+                       firefox_logo-only_RGB-400px.png 400w"
+               sizes="(max-width: 480px) 120px,
+                      400px"
+               src="firefox_logo-only_RGB-400px.png" alt="Download Firefox">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset="mozilla-dinosaur-head-120px.png 120w,
+                       mozilla-dinosaur-head-400px.png 400w"
+               sizes="(max-width: 480px) 120px,
+                      400px"
+               src="mozilla-dinosaur-head-400px.png" alt="Learn more about Mozilla">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="firefox-addons-120px.jpg 120w,
+                       firefox-addons-400px.jpg 400w"
+               sizes="(max-width: 480px) 120px,
+                      400px"
+               src="firefox-addons-400px.jpg" alt="Customize Firefox with add-ons">
         </a>
         <a href="https://developer.mozilla.org/zh-CN/">
-          <img>
+          <img src="mdn.svg" role="img" alt="Learn web development with MDN">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- 插入照片元素 -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="red-panda-600px.jpg">
+          <img src="red-panda-1200px.jpg" alt="red panda">
+        </picture>
       </div>
 
     </main>
